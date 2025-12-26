@@ -80,6 +80,7 @@ for file in os.listdir(pdf_dir):
         pdf_path = os.path.join(pdf_dir, file)
         content = extract_text_from_pdf(pdf_path)
         documents.append(Document(text=content, metadata={"source": file}))
+
 3. Build Vector Index
 
 VectorStoreIndex converts document text into embeddings via OpenAI API.
@@ -145,7 +146,7 @@ Querying: LLM sees only retrieved chunks, not entire documents.
 
 Purpose: Fast and relevant answers without sending the full document to the model at query time.
 
-# Be mindful of Using Private and Sensitive Information. The document goes OpenAI for embeddings so use only public data for this setup. #
+# Be mindful of Using Private and Sensitive Information. The document goes to OpenAI for embeddings so use only public data for this setup. #
 
 Next Steps / Future Work
 
