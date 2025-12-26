@@ -146,7 +146,7 @@ Querying: LLM sees only retrieved chunks, not entire documents.
 
 Purpose: Fast and relevant answers without sending the full document to the model at query time.
 
-# Be mindful of Using Private and Sensitive Information. The document goes to OpenAI for embeddings so use only public data for this setup. #
+# Be mindful of Using Private and Sensitive Information. The document goes to OpenAI for embeddings so use only public data for this setup.#
 
 Next Steps / Future Work
 
