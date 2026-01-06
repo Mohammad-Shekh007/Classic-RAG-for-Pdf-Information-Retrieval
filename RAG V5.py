@@ -31,7 +31,7 @@ def extract_text_from_pdf(pdf_path):
 # --------------------------------
 # Load PDFs from a directory
 # --------------------------------
-pdf_dir = r"D:\Old Data\Wasim\Machine LEarning Practice\Artificial Intelligence\RAG\RAG Specialized detailed notes"
+pdf_dir = r"Your File Path Here"
 documents = []
 
 for file in os.listdir(pdf_dir):
@@ -76,3 +76,4 @@ while True:
     response = query_engine.query(q)
     print("\n--- Answer ---")
     print(response)
+
